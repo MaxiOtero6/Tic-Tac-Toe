@@ -179,7 +179,6 @@ bool diagonal_check(Board *board_pointer, char icon)
 
 bool check_winner(Board *board_pointer, char icon)
 {
-    std::cout << icon << "\n";
     if (row_check(board_pointer, icon))
     {
         return true;

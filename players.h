@@ -6,7 +6,6 @@
 
 struct Player
 {
-
     std::string name;
     int score = 0;
     char icon;

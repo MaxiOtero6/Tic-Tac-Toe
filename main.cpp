@@ -6,11 +6,12 @@
 int main()
 {
     bool winner = false;
-    int turn = 0, option = 0;
+    int turn, option = 0;
     char icon;
-    Board *board_pointer = new Board;
     Players *players_pointer = new Players;
+    Board *board_pointer;
 
+    input_players(players_pointer);
     while (option != 2)
     {
         ask_option(option);
@@ -18,9 +19,8 @@ int main()
         switch (option)
         {
             case 1:
-
-                input_players(players_pointer);
-
+                turn = 0;
+                board_pointer = new Board;
                 do
                 {
                     print_board(board_pointer);
@@ -41,8 +41,8 @@ int main()
 
             case 2:
                 std::cout << "Thanks for playing!\n";
-                delete board_pointer;
                 delete players_pointer;
+                delete board_pointer;
                 break;
         }
     }

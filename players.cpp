@@ -23,6 +23,7 @@ void input_players(Players *players_pointer)
 void choose_position(Board *&board_pointer, char player_icon)
 {
     int position, row = 0;
+    std::cout << player_icon << ": ";
     ask_position(position, board_pointer, row);
 
     board_pointer->token[row][position] = player_icon;
