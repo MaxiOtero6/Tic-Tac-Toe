@@ -1,2 +1,2 @@
 # Tic-Tac-Toe
-Tic-Tac-Toe game in C++
+A basic  design of Tic-Tac-Toe game in C++ i made it for fun.
